@@ -17,6 +17,7 @@ import "./index.css";
 import { removeItem } from "../../../core/services/common/storage";
 import { isLogin } from "../../../utils/auth";
 import { AppContext } from "../../../context/Provider";
+import pc from "@/assets/images/navbar/Group 33.png";
 
 function MyNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,7 +39,7 @@ function MyNavbar() {
         />
         <Link to="/">
           <div className="hidden sm:flex items-center gap-2">
-            <img src="/src/assets/images/navbar/Group 33.png" />
+            <img src={pc} />
             <p>Solution Markers</p>
           </div>
         </Link>

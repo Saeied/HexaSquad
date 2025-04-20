@@ -1,6 +1,7 @@
 import { Avatar, Badge } from "@nextui-org/react";
 import { useContext } from "react";
 import { AppContext } from "../../../context/Provider";
+import shoppingBag from "@/assets/images/navbar/shopping-bag.png";
 
 function BagIcon() {
   const { bagIconNum } = useContext(AppContext);
@@ -16,7 +17,7 @@ function BagIcon() {
       <Avatar
         radius="full"
         size="sm"
-        src="/src/assets/images/navbar/shopping-bag.png"
+        src={shoppingBag}
         className="w-6 h-6"
         classNames={{
           base: "bg-transparent",
