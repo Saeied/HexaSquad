@@ -9,6 +9,7 @@ import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { AppContext } from "../../context/Provider";
 import { useQuery } from "@tanstack/react-query";
 import { BeatLoader } from "react-spinners";
+import photo from "@/components/landing/Objects/photo.png";
 
 const LandingNews = () => {
   const navigate = useNavigate();
@@ -46,10 +47,7 @@ const LandingNews = () => {
               <div className="w-1/2 hover:scale-[1.03] cursor-pointer duration-200 h-full flex flex-col gap-5 justify-between items-center px-2">
                 <div className="w-full lg:w-[80%] rounded-[25px] overflow-hidden">
                   <img
-                    src={
-                      data.data.news[0].currentImageAddressTumb ||
-                      "/src/components/Landing/Objects/photo.png"
-                    }
+                    src={data.data.news[0].currentImageAddressTumb || photo}
                     className="w-full h-[150px] sm:h-[200px] md:h-[300px] lg:h-[400px]"
                   />
                 </div>

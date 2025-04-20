@@ -23,7 +23,7 @@ const Category = () => {
   }
 
   return (
-    <div className="dark:bg-none lg:bg-[url(/src/components/Landing/Objects/blend.png)] flex flex-col lg:flex-row items-center justify-between gap-16 mt-32 px-16 dark:px-28">
+    <div className="dark:bg-none lg:bg-[url(/blend.png)] flex flex-col lg:flex-row items-center justify-between gap-16 mt-32 px-16 dark:px-28">
       <div className="dark:text-[#7a7878] mt-[-70px] w-full lg:w-[35%] flex flex-col justify-center text-right">
         <h1 className="dark:text-white">دسته بندی دوره ها</h1>
         <p className="dark:text-white">

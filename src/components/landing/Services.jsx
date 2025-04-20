@@ -1,5 +1,8 @@
 import ServicesCard from "./Objects/ServicesCard";
 import SectionsTitle from "./Objects/SectionsTitle";
+import img1 from "@/components/landing/Objects/ServiceSimple.png";
+import img2 from "@/components/landing/Objects/ServiceS.png";
+import img3 from "@/components/landing/Objects/ServiceMadrak.png";
 
 const Services = () => {
   return (
@@ -7,12 +10,12 @@ const Services = () => {
       <SectionsTitle name="خدمات ما" />
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-8 px-4 lg:px-16">
         <ServicesCard
-          img="/src/components/Landing/Objects/ServiceSimple.png"
+          img={img1}
           serviceTitle="سادگی خدمات"
           serviceDescription="سهولت دسترسی و دریافت  خدمات از همه ی نقاط کشور با کمترین تعرفه و بدون نیاز  مراجعه حضوری در کل فرایند ثبت"
         />
         <ServicesCard
-          img="/src/components/Landing/Objects/ServiceS.png"
+          img={img2}
           serviceTitle="فرصت های شغلی"
           serviceDescription="
                 سهولت دسترسی و دریافت
@@ -22,7 +25,7 @@ const Services = () => {
                 فرایند ثبت"
         />
         <ServicesCard
-          img="/src/components/Landing/Objects/ServiceMadrak.png"
+          img={img3}
           serviceTitle="مدرک معتبر"
           serviceDescription="سهولت دسترسی و دریافت  خدمات از همه ی نقاط کشور با کمترین تعرفه و بدون نیاز  مراجعه حضوری در کل فرایند ثبت"
         />
