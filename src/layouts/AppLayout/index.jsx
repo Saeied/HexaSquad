@@ -8,7 +8,8 @@ import { useContext } from "react";
 import { AppContext } from "../../context/Provider";
 
 function AppLayout({ children }) {
-  const { isSignUpLoginModalOpen, setisSignUpLoginModalOpen } = useContext(AppContext);
+  const { isSignUpLoginModalOpen, setisSignUpLoginModalOpen } =
+    useContext(AppContext);
 
   return (
     <>
@@ -17,7 +18,7 @@ function AppLayout({ children }) {
       <Modal
         isOpen={isSignUpLoginModalOpen}
         onOpenChange={() => setisSignUpLoginModalOpen(false)}
-        classNames={{ base: "dark:bg-dark-200", closeButton: " hidden" }}
+        classNames={{ base: "dark:bg-dark-200 m-3", closeButton: "hidden" }}
       >
         <ModalContent>
           <ModalBody>
