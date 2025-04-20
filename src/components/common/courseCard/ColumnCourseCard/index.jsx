@@ -23,6 +23,7 @@ import {
   deleteCourseLike,
   addCourseDislike,
 } from "../../../../core/api/app/CourseDetails";
+import notFound from "@/assets/images/notFound/1047293-صفحه-یافت-نشد-خطای-404.jpg";
 
 function ColumnCourseCard({
   courseId,
@@ -169,7 +170,7 @@ function ColumnCourseCard({
             src={
               tumbImageAddress != "null" && tumbImageAddress
                 ? tumbImageAddress
-                : "/src/assets/images/notFound/1047293-صفحه-یافت-نشد-خطای-404.jpg"
+                : notFound
             }
           />
         </CardHeader>

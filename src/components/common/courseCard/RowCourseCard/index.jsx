@@ -4,6 +4,7 @@ import { BsPeopleFill } from "react-icons/bs";
 import { TbProgressCheck } from "react-icons/tb";
 import { SiLevelsdotfyi } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
+import notFound from "@/assets/images/notFound/1047293-صفحه-یافت-نشد-خطای-404.jpg";
 
 function RowCourseCard({
   courseId,
@@ -30,10 +31,7 @@ function RowCourseCard({
           width="100%"
           className="w-full h-[200px] sm:h-[280px] md:h-[250px] lg:h-[270px] xl:h-[220px]"
           classNames={{ wrapper: "w-full" }}
-          src={
-            tumbImageAddress ||
-            "/src/assets/images/notFound/1047293-صفحه-یافت-نشد-خطای-404.jpg"
-          }
+          src={tumbImageAddress || notFound}
         />
       </div>
       <div className="flex flex-col gap-5 md:justify-between w-[70%] lg:w-[60%] xl:w-[70%]">
