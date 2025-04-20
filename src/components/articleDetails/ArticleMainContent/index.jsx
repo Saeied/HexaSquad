@@ -15,6 +15,7 @@ import {
 } from "../../../core/api/app/ArticleDetails";
 import toast from "react-hot-toast";
 import { AppContext } from "../../../context/Provider";
+import notFound from "@/assets/images/notFound/1047293-صفحه-یافت-نشد-خطای-404.jpg";
 
 function ArticleMainContent() {
   const { id } = useParams();
@@ -77,10 +78,7 @@ function ArticleMainContent() {
         <div className="flex flex-col gap-10 md:flex-row p-5">
           <div className="imgContainer w-full md:w-[40%] rounded-2xl overflow-hidden lg:h-[340px]">
             <img
-              src={
-                data.data.detailsNewsDto.currentImageAddress ||
-                "/src/assets/images/notFound/1047293-صفحه-یافت-نشد-خطای-404.jpg"
-              }
+              src={data.data.detailsNewsDto.currentImageAddress || notFound}
               className="w-full h-full"
             />
           </div>

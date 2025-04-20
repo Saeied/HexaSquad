@@ -15,6 +15,7 @@ import {
 import { AppContext } from "../../../context/Provider";
 import { FaStar, FaRegBookmark, FaBookmark } from "react-icons/fa";
 import { CiStar } from "react-icons/ci";
+import notFound from "@/assets/images/notFound/1047293-صفحه-یافت-نشد-خطای-404.jpg";
 
 function ArticleCard({
   id,
@@ -116,10 +117,7 @@ function ArticleCard({
       <CardHeader className="p-0" onClick={() => navigate(`/articles/${id}`)}>
         <div className="flex justify-center w-full rounded-3xl overflow-hidden">
           <img
-            src={
-              currentImageAddressTumb ||
-              "/src/assets/images/notFound/1047293-صفحه-یافت-نشد-خطای-404.jpg"
-            }
+            src={currentImageAddressTumb || notFound}
             className="w-full h-[200px] sm:h-[300px] md:h-[275px] lg:h-[280px]"
           />
         </div>

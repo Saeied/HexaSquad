@@ -16,6 +16,7 @@ import toast from "react-hot-toast";
 import { AppContext } from "../../../context/Provider";
 import { Button } from "@nextui-org/react";
 import RelatedCourses from "../RelatedCourses";
+import notFound from "@/assets/images/notFound/1047293-صفحه-یافت-نشد-خطای-404.jpg";
 
 function CourseMainContent() {
   const { id } = useParams();
@@ -77,10 +78,7 @@ function CourseMainContent() {
         <div className="flex flex-col gap-5 w-full lg:w-[70%]">
           <div className="relative rounded-3xl overflow-hidden">
             <img
-              src={
-                data.data.imageAddress ||
-                "/src/assets/images/notFound/1047293-صفحه-یافت-نشد-خطای-404.jpg"
-              }
+              src={data.data.imageAddress || notFound}
               className="w-full lg:h-[548px]"
             />
           </div>
