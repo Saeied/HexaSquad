@@ -56,9 +56,9 @@ function MyNavbar() {
         </ul>
         <div className="flex justify-between items-center gap-4">
           <ToggleTheme hideInMobile={true} />
-          <Link className="bg-white h-[50px] w-[50px] rounded-full hidden sm:flex items-center justify-center">
+          {/* <Link className="bg-white h-[50px] w-[50px] rounded-full hidden sm:flex items-center justify-center">
             <BagIcon />
-          </Link>
+          </Link> */}
           {isLogin() && (
             <Popover
               placement="bottom-start"
